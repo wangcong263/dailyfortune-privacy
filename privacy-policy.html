@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>每日运势 · 隐私政策 / Daily Fortune · Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f6f6fb;
+    --card: #ffffff;
+    --text: #1f2430;
+    --muted: #6b7280;
+    --accent: #5b5fe0;
+    --accent-soft: #eef0ff;
+    --border: #e6e8f2;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue",
+                 "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 24px 20px 64px; }
+  header {
+    background: linear-gradient(135deg, #5b5fe0 0%, #8b5cf6 100%);
+    color: #fff;
+    border-radius: 20px;
+    padding: 32px 28px;
+    margin-bottom: 28px;
+  }
+  header h1 { font-size: 24px; font-weight: 700; margin-bottom: 6px; }
+  header p { opacity: 0.9; font-size: 14px; }
+  .lang-bar {
+    display: flex; gap: 10px; margin-bottom: 20px;
+  }
+  .lang-bar button {
+    flex: 1;
+    padding: 10px 0;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .lang-bar button.active {
+    background: var(--accent-soft);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .lang { display: none; }
+  .lang.active { display: block; }
+  section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 22px 24px;
+    margin-bottom: 16px;
+  }
+  section h2 {
+    font-size: 17px;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  section p { color: var(--text); font-size: 15px; }
+  section ul { margin: 8px 0 0 20px; }
+  section li { font-size: 15px; margin-bottom: 6px; }
+  .meta {
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+    margin-top: 28px;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 12px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>每日运势 · 隐私政策</h1>
+    <p>Daily Fortune · Privacy Policy</p>
+  </header>
+
+  <div class="lang-bar">
+    <button id="btn-zh" class="active" onclick="switchLang('zh')">中文</button>
+    <button id="btn-en" onclick="switchLang('en')">English</button>
+  </div>
+
+  <div id="lang-zh" class="lang active">
+    <section><h2>更新日期</h2><p>2026 年 8 月 13 日</p></section>
+    <section>
+      <h2>一、我们收集什么</h2>
+      <p>本应用不收集任何个人信息。我们不需要您提供姓名、手机号、邮箱或位置信息，也不会上传您的任何资料。</p>
+    </section>
+    <section>
+      <h2>二、本地账号</h2>
+      <p>您可以选择创建本地账号以保存个性化资料（如昵称、生日、性别、血型）。账号密码保存在设备系统钥匙串中，资料保存在设备本地，均不会上传、同步或分享至任何服务器或网络平台。</p>
+    </section>
+    <section>
+      <h2>三、数据存储</h2>
+      <p>您在本应用中做出的所有选择（例如所选星座、账号资料）仅保存在您的设备本地。</p>
+    </section>
+    <section>
+      <h2>四、网络与第三方</h2>
+      <p>本应用无需网络权限即可正常使用，不含广告、统计、追踪或任何第三方 SDK，应用内没有任何联网行为。</p>
+    </section>
+    <section>
+      <h2>五、本地提醒</h2>
+      <p>若您开启每日提醒，应用会在您设定的时间于设备本地生成当日运势并推送通知；该过程完全离线，不产生任何网络请求。</p>
+    </section>
+    <section>
+      <h2>六、儿童隐私</h2>
+      <p>本应用不收集任何用户数据，因此不存在针对儿童的数据收集行为。</p>
+    </section>
+    <section>
+      <h2>七、数据删除</h2>
+      <p>删除本地账号或卸载应用，即可删除全部本地资料。</p>
+    </section>
+    <section>
+      <h2>八、政策变更</h2>
+      <p>若未来功能变化导致数据收集行为发生改变，我们将提前更新本政策，并重新提交相应的 App Store 隐私标签说明。</p>
+    </section>
+    <section>
+      <h2>九、联系我们</h2>
+      <p>如对本政策有任何疑问，请通过应用商店页面提供的联系方式与我们联系。</p>
+    </section>
+  </div>
+
+  <div id="lang-en" class="lang">
+    <section><h2>Last Updated</h2><p>August 13, 2026</p></section>
+    <section>
+      <h2>1. What We Collect</h2>
+      <p>This app does not collect any personal information. We do not ask for your name, phone number, email, or location, and we never upload any of your data.</p>
+    </section>
+    <section>
+      <h2>2. Local Accounts</h2>
+      <p>You may create a local account to save personalized details (such as nickname, birth date, gender, and blood type). The account password is stored in your device's system Keychain, and profile data is stored locally. Nothing is uploaded, synced, or shared with any server or network platform.</p>
+    </section>
+    <section>
+      <h2>3. Data Storage</h2>
+      <p>All choices you make in this app (such as your zodiac sign and account profile) are stored locally on your device only.</p>
+    </section>
+    <section>
+      <h2>4. Network &amp; Third Parties</h2>
+      <p>This app works fully offline without network permission. It contains no ads, analytics, tracking, or third-party SDKs, and makes no network requests.</p>
+    </section>
+    <section>
+      <h2>5. Local Reminders</h2>
+      <p>If you enable the daily reminder, the app generates that day's fortune locally at your chosen time and delivers a local notification. This process is fully offline and involves no network requests.</p>
+    </section>
+    <section>
+      <h2>6. Children's Privacy</h2>
+      <p>Because this app collects no user data, there is no data collection activity regarding children.</p>
+    </section>
+    <section>
+      <h2>7. Data Deletion</h2>
+      <p>Deleting your local account or uninstalling the app removes all local data.</p>
+    </section>
+    <section>
+      <h2>8. Policy Changes</h2>
+      <p>If future changes introduce data collection, we will update this policy in advance and resubmit the corresponding App Store privacy label.</p>
+    </section>
+    <section>
+      <h2>9. Contact Us</h2>
+      <p>If you have any questions about this policy, please contact us through the contact information provided on our App Store page.</p>
+    </section>
+  </div>
+
+  <p class="meta">Daily Fortune 每日运势 · 内容仅供娱乐参考</p>
+  <footer>For entertainment purposes only.</footer>
+</div>
+
+<script>
+  function switchLang(lang) {
+    document.getElementById('lang-zh').classList.toggle('active', lang === 'zh');
+    document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  }
+</script>
+</body>
+</html>
